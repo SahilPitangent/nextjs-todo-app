@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Title
+A simple app to create, store and manage ToDo lists
 
-## Getting Started
 
-First, run the development server:
+## Installation and Setup
 
+1. First clone the repository
+2. Run the following commands to setup the project and start development server
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+3. To turn on redux logger set following variables in .env.local file
+```
+NEXT_PUBLIC_REDUX_LOGGER_ON=ON
+```
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Nextjs (App router)
+2. Prisma - database management and ORM, used SQLite as database
+3. Redux toolkit & Redux toolkit query
+4. Material UI
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Assumptions
 
--  [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--  [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+2. The `Completion Date` of a todo item is assumed as `Due Date` in the application.
