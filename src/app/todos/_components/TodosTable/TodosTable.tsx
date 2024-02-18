@@ -21,7 +21,7 @@ export default function TodosTable({
    return (
       <Box sx={{ width: '100%' }}>
          <Paper sx={{ width: '100%', mb: 2 }}>
-            <TableContainer sx={{ height: 400 }}>
+            <TableContainer sx={{ maxHeight: 400 }}>
                <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle">
                   <TableHead>
                      <TableRow>

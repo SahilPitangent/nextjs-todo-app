@@ -4,6 +4,8 @@ A simple app to create, store and manage ToDo lists.
 
 ## Installation and Setup
 
+Please make sure you `Node` version is at least `18.0.0` adn `npm` version is at least `9.5.0`
+
 1. First clone the repository
 2. Run the following commands to setup the project and start development server
 ```bash
@@ -28,6 +30,7 @@ NEXT_PUBLIC_REDUX_LOGGER_ON=ON
 ## Assumptions
 
 1. The `Completion Date` of a todo item is assumed as `Due Date` in the application.
+2. To simplify running the project database files also included in git. It is not necessary to run migration commands.
 
 
 ## Note
