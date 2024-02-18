@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 
 const prisma = new PrismaClient();
 
-export async function GET(): Promise<HttpResponse<Todo[]>> {
+export async function GET() {
    try {
       const todos = await prisma.todo.findMany();
 
@@ -20,7 +20,7 @@ export async function GET(): Promise<HttpResponse<Todo[]>> {
    }
 }
 
-export async function POST(request: Request): Promise<HttpResponse<Todo>> {
+export async function POST(request: Request) {
    try {
       const body = await request.json();
       const todo = await prisma.todo.create({
@@ -38,7 +38,7 @@ export async function POST(request: Request): Promise<HttpResponse<Todo>> {
    }
 }
 
-export async function PATCH(request: Request): Promise<HttpResponse<Todo>> {
+export async function PATCH(request: Request) {
    try {
       const body: Todo = await request.json();
       const todo = await prisma.todo.update({
@@ -59,7 +59,7 @@ export async function PATCH(request: Request): Promise<HttpResponse<Todo>> {
    }
 }
 
-export async function DELETE(request: Request): Promise<HttpResponse<Todo>> {
+export async function DELETE(request: Request) {
    try {
       const body: Todo = await request.json();
       const todo = await prisma.todo.delete({
