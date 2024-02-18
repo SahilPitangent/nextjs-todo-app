@@ -1,5 +1,5 @@
-## Title
-A simple app to create, store and manage ToDo lists
+# ToDo List App 
+A simple app to create, store and manage ToDo lists.
 
 
 ## Installation and Setup
@@ -27,4 +27,9 @@ NEXT_PUBLIC_REDUX_LOGGER_ON=ON
 
 ## Assumptions
 
-2. The `Completion Date` of a todo item is assumed as `Due Date` in the application.
+1. The `Completion Date` of a todo item is assumed as `Due Date` in the application.
+
+
+## Note
+
+If this assignment is selected, please email to `miltan@pitangent.com` to proceed.
