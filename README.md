@@ -4,7 +4,7 @@ A simple app to create, store and manage ToDo lists.
 
 ## Installation and Setup
 
-Please make sure you `Node` version is at least `18.0.0` adn `npm` version is at least `9.5.0`
+Please make sure your `Node` version is at least `18.0.0` adn `npm` version is at least `9.5.0`
 
 1. First clone the repository
 2. Run the following commands to setup the project and start development server
