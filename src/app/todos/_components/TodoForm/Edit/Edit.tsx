@@ -83,11 +83,23 @@ export default function TodoForm({
             </form>
          </DialogContent>
          <DialogActions>
-            <Button type="submit" variant="contained" form="todo-form" disabled={isProcessingReq}>
-               {isProcessingReq && <CircularProgress />}
+            <Button
+               sx={{ width: 108 }}
+               type="submit"
+               variant="contained"
+               form="todo-form"
+               disabled={isProcessingReq}
+            >
+               {isProcessingReq && <CircularProgress sx={{ mr: 1.2 }} size={15} color="inherit" />}
                Update
             </Button>
-            <Button type="button" color="secondary" variant="contained" onClick={closeDialog}>
+            <Button
+               type="button"
+               color="secondary"
+               variant="contained"
+               onClick={closeDialog}
+               disabled={isProcessingReq}
+            >
                Cancel
             </Button>
          </DialogActions>

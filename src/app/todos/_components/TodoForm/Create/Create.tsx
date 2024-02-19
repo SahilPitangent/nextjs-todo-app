@@ -86,7 +86,13 @@ export default function TodoForm({
                {isProcessingReq && <CircularProgress sx={{ mr: 1.2 }} size={15} color="inherit" />}
                Create
             </Button>
-            <Button type="button" color="secondary" variant="contained" onClick={closeDialog}>
+            <Button
+               type="button"
+               color="secondary"
+               variant="contained"
+               onClick={closeDialog}
+               disabled={isProcessingReq}
+            >
                Cancel
             </Button>
          </DialogActions>
